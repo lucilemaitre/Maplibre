@@ -1,0 +1,81 @@
+#map {position:absolute; top:70px !important; bottom:0; width:100%;}
+
+.Mypopup .maplibregl-popup-content {
+  background-color: black;
+  color: #FF10F0;          
+  font-weight: bold;       
+  opacity: 0.7;
+  text-shadow:
+    0 0 5px #FF10F0,
+    0 0 10px #FF10F0,
+    0 0 20px #FF10F0;      
+}
+
+.Mypopup2 .maplibregl-popup-content {
+  background-color: black;
+  color: #39FF14;          
+  font-weight: bold;
+  opacity: 0.7;
+  text-shadow:
+    0 0 5px #39FF14,
+    0 0 10px #39FF14,
+    0 0 20px #39FF14;      
+}
+.menu {
+            font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+            position: absolute;
+            width: 200px;
+            top: 90px !important;
+            left: 50px;
+            padding: 10px;
+            z-index: 1000;
+        }
+
+.menu .menu_overlay {
+            background-color:#FFFFFF;
+            box-shadow:0 1px 2px rgba(0, 0, 0, 0.10);
+            border-radius: 3px;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+.menu_overlay fieldset {
+            border: none;
+            padding: 0;
+            margin: 0 0 10px;
+        }
+.menu_overlay .categoryLabel {
+            display: block;
+            font-weight: bold;
+            margin: 0 0 5px;
+        }
+
+#ongletsgeo {position: absolute; 
+             top: 85px !important; 
+             left: 70px; 
+             z-index: 1000;
+             width:463px;
+             background-color: #ffffff;
+             padding: 5px;
+             border-radius: 5px;
+             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* BANDEAU CLIGNOTANT */
+.neon-banner {
+    position: fixed; top: 0; left: 0; width: 100%; height: 70px;
+    background: linear-gradient(90deg, #ff4500, #ff8c00, #ff4500);
+    display: flex; align-items: center; justify-content: center; z-index: 1001;
+    box-shadow: 0 4px 30px rgba(255,69,0,0.8);
+    animation: blink-fast 0.6s infinite, glow-pulse 1s infinite alternate;
+}
+.banner-content h1 {
+    margin: 0; font-size: 2em; font-weight: bold; color: #fff;
+    text-shadow: 0 0 5px #ff8c00,0 0 15px #ff4500,0 0 25px #ff8c00,0 0 40px #ff4500;
+    animation: rotate3d 12s linear infinite, flicker 0.3s infinite alternate;
+    letter-spacing: 4px;
+}
+@keyframes blink-fast {0%,20%{opacity:.6}30%,50%{opacity:1}60%,80%{opacity:.4}90%,100%{opacity:1}}
+@keyframes glow-pulse {0%{box-shadow:0 4px 20px rgba(255,69,0,.6),inset 0 0 20px rgba(255,140,0,.3)}50%{box-shadow:0 0 60px #ff4500,0 0 100px #ff8c00,inset 0 0 40px #ff4500}100%{box-shadow:0 4px 20px rgba(255,69,0,.6),inset 0 0 20px rgba(255,140,0,.3)}}
+@keyframes flicker {0%,50%{text-shadow:0 0 5px #ff8c00,0 0 15px #ff4500,0 0 25px #ff8c00}51%,100%{text-shadow:0 0 20px #ff4500,0 0 40px #ff8c00,0 0 60px #ff4500}}
+@keyframes rotate3d {0%{transform:rotateX(0)rotateY(0)rotateZ(0)}100%{transform:rotateX(360deg)rotateY(360deg)ro
